@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .item{
+            /* width: 50px;    
+            height: 50px;        */
+            background-color: rgb(135, 151, 216);
+            color: black;
+            border: 2px solid black;
+            margin: 5px;
+            text-align: center;
+           }
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            background-color: #835959;
+            width: 800px;
+            height: 400px;
+            }
+            #item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            }
+          
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">one </div>
+        <div class="item">two</div>
+        <div class="item">three</div>
+        <div class="item">four</div>
+        <div class="item">five</div>
+        <div class="item">we</div>
+        <div class="item">are</div>
+        <div class="item">human</div>
+        <div class="item">being</div>
+        <div class="item">with</div>
+        <div class="item">haha</div>
+    </div>
+</body>
+</html>
